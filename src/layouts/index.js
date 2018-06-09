@@ -1,11 +1,16 @@
 import React from 'react'
+import Link from 'gatsby-link'
 import styles from './styles.module.scss'
 
 export default ({ children, data }) => (
 	<div>
 		<div className={styles.body}>
 			<header className={styles.header}>
-				<h1>{data.site.siteMetadata.title}</h1>
+				<Link to={`/`}>
+					<h1 className={styles.siteTitle}>
+						Super Awesome<br />Women in Tech
+					</h1>
+				</Link>
 				<p className={styles.description}>
 					{data.site.siteMetadata.description}
 				</p>

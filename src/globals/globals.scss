@@ -1,0 +1,20 @@
+$purple: #7f13ad;
+$purple-lt: #b168d1;
+$purple-xlt: #bb90ce;
+
+$orange: #ef9c1f;
+$white: #f2edf4;
+
+// Breakpoints
+$sm: 42em;
+$lg: 62em;
+
+a {
+  color: $purple;
+  transition: color 200ms ease-in-out;
+
+  &:hover,
+  &:focus {
+    color: $purple-lt;
+  }
+}

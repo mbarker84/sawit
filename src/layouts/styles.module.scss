@@ -1,9 +1,11 @@
+@import '../globals/globals.scss';
+
 * {
   box-sizing: border-box;
 }
 
 body {
-  background: orange;
+  background: $purple-lt;
 }
 
 .body {
@@ -11,7 +13,7 @@ body {
   padding: 1rem;
   min-height: 100vh;
 
-  @media (min-width: 42em) {
+  @media (min-width: $sm) {
     display: grid;
     grid-template-columns: minmax(1rem, 1fr) minmax(auto, var(--maxWidth)) minmax(1rem, 1fr);
     grid-template-rows: minmax(0, auto) minmax(50vh, auto);
@@ -19,14 +21,23 @@ body {
     grid-gap: 1rem;
   }
 
-  @media (min-width: 62em) {
-    --maxWidth: 50rem;
+  @media (min-width: $lg) {
+    --maxWidth: 80vw;
   }
 }
 
 .header {
   grid-column: 2;
   text-align: center;
+}
+
+.siteTitle {
+  text-shadow: -0.03em 0.03em 0 $purple-lt, -0.1em 0.1em 0 $purple;
+
+  @media (min-width: $lg) {
+    font-size: 5vw;
+    margin-bottom: 2rem;
+  }
 }
 
 .content {
@@ -38,7 +49,7 @@ body {
 
 .description {
   font-size: 1.2rem;
-  max-width: 30ch;
+  max-width: 40ch;
   margin: 1rem auto;
 }
 

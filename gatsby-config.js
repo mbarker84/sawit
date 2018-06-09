@@ -1,7 +1,7 @@
 module.exports = {
 	siteMetadata: {
 		title: `Super Awesome Women in Tech`,
-		description: `Find your next designer, developer or speaker (who happens to be a woman)`
+		description: `Find your next designer, developer, speaker, trainer or contributor (who happens to identify as female)`
 	},
 	plugins: [
 		{

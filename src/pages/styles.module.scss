@@ -1,5 +1,50 @@
+@import '../globals/globals.scss';
+
 .link {
   display: block;
   margin-bottom: 0.5rem;
   text-decoration: none;
+}
+
+.person {
+  background-color: $white;
+  padding: 1rem 1rem;
+  border: 0.3rem solid $purple;
+  box-shadow: -0.5rem 0.5rem 0 $purple;
+
+  ul {
+    margin-bottom: 1.5rem;
+  }
+
+  @media (min-width: $sm) {
+    padding: 1.5rem;
+  }
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > * + * {
+    margin-top: 2rem;
+  }
+}
+
+.titleLink {
+  display: block;
+  
+  h2 {
+    border-bottom: 0.15em solid $orange;
+    padding-bottom: 0.5rem;
+    transition: border 250ms ease-in-out;
+    margin: 0 0 1rem;
+  }
+
+  &:hover,
+  &:focus {
+    h2 {
+      border-bottom: 0.15em solid $purple-lt;
+    }
+  }
 }
