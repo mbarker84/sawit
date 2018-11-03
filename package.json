@@ -21,6 +21,7 @@
 		"gatsby-transformer-remark": "^1.7.40",
 		"merge": "^1.2.1",
 		"react-helmet": "^5.2.0",
-		"typography-theme-doelger": "^0.15.11"
+		"typography-theme-doelger": "^0.15.11",
+		"url-parse": "^1.4.3"
 	}
 }
