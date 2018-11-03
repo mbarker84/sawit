@@ -19,6 +19,7 @@
 		"gatsby-plugin-typography": "^1.7.18",
 		"gatsby-source-filesystem": "^1.5.35",
 		"gatsby-transformer-remark": "^1.7.40",
+		"merge": "^1.2.1",
 		"react-helmet": "^5.2.0",
 		"typography-theme-doelger": "^0.15.11"
 	}

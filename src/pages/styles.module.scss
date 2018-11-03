@@ -37,7 +37,7 @@
   h2 {
     border-bottom: 0.15em solid $orange;
     padding-bottom: 0.5rem;
-    transition: border 250ms ease-in-out;
+    transition: border 250ms ease-in-out, color 250ms ease-in-out;
     margin: 0 0 1rem;
   }
 
@@ -45,6 +45,12 @@
   &:focus {
     h2 {
       border-bottom: 0.15em solid $purple-lt;
+      color: $purple;
     }
   }
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: rem(18px);
 }

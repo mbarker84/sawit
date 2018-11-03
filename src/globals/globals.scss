@@ -9,6 +9,11 @@ $white: #f2edf4;
 $sm: 42em;
 $lg: 62em;
 
+@function rem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
+
 a {
   color: $purple;
   transition: color 200ms ease-in-out;
